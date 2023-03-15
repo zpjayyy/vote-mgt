@@ -27,3 +27,6 @@ spring:
           enabled: true
           config:
             delete-allow: false
+  jpa:
+    database: mysql
+    show-sql: true

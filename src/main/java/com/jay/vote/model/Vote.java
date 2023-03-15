@@ -1,5 +1,6 @@
 package com.jay.vote.model;
 
+import com.jay.vote.model.user.User;
 import lombok.Data;
 
 import java.util.List;
