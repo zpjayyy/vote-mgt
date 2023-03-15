@@ -5,4 +5,7 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface UserRepository extends CrudRepository<User, Long> {
 
+    User findByPhoneNumberOrEmail(String phoneNumber, String email);
+
+    User findByNameAndPasswordHash(String name, String passwordHash);
 }

@@ -8,7 +8,7 @@ public class PhoneNumberValidator implements ConstraintValidator<PhoneNumber, St
     @Override
     public boolean isValid(String value, ConstraintValidatorContext context) {
         if (value.isBlank()) {
-            return false;
+            return true;
         }
         return value.matches("^1[3456789]\\d{9}$");
     }
